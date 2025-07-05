@@ -1,6 +1,6 @@
 {
-  "short_name": "Neev PortFolio",
-  "name": "Neev Ahuja GHPS GTBIT PortFolio",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#7355ef",
+  "theme_color": "#000000",
   "background_color": "#ffffff"
 }
