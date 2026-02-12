@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #2bee9d;
+    --color-secondary-peach: #FFDAB9;
+    --color-secondary-periwinkle: #CCCCFF;
+    --color-background-light: #f6f8f7;
+    --color-background-dark: #10221a;
+
+    --font-display: "Plus Jakarta Sans", sans-serif;
+
+    --radius-default: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-full: 9999px;
+
+    --shadow-chunky: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+    --shadow-chunky-hover: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+    --shadow-chunky-primary: 4px 4px 0px 0px #10221a;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+body {
+    background-color: #f6f8f7;
+    background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+.dark body {
+    background-color: #10221a;
+    background-image: radial-gradient(#1e3a2f 1px, transparent 1px);
+}
+
+.chunky-btn {
+    transition: all 0.1s ease;
+    transform: translate(-4px, -4px);
+}
+
+.chunky-btn:active {
+    transform: translate(0px, 0px);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1) !important;
+}
+
+.polaroid {
+    transition: transform 0.3s ease;
+}
+
+.polaroid:hover {
+    transform: scale(1.02) rotate(0deg) !important;
+    z-index: 10;
+}
+
+.tech-bubble {
+    cursor: grab;
+    user-select: none;
+}
+
+.tech-bubble:active {
+    cursor: grabbing;
+}
